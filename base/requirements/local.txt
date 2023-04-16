@@ -1,0 +1,77 @@
+# ------------------------------------------------------------------------------
+# base requirements
+# ------------------------------------------------------------------------------
+-r base.txt
+
+
+# https://httpie.io/docs/cli
+httpie
+# https://github.com/pallets/werkzeug
+Werkzeug[watchdog]==2.2.3
+# https://github.com/gotcha/ipdb
+ipdb==0.13.11
+
+# ------------------------------------------------------------------------------
+# Databases
+# ------------------------------------------------------------------------------
+# https://github.com/psycopg/psycopg2
+psycopg2==2.9.5
+
+# ------------------------------------------------------------------------------
+# Testing
+# ------------------------------------------------------------------------------
+# https://github.com/typeddjango/django-stubs
+django-stubs==1.14.0
+# https://github.com/python/mypy
+mypy==0.982
+# https://github.com/pytest-dev/pytest
+pytest==7.2.1
+# https://github.com/Frozenball/pytest-sugar
+pytest-sugar==0.9.6
+# https://pytest-xdist.readthedocs.io/en/latest/
+pytest-xdist==2.5.0
+
+# ------------------------------------------------------------------------------
+# Documentation
+# ------------------------------------------------------------------------------
+# https://github.com/sphinx-doc/sphinx
+sphinx==5.0.2
+# https://github.com/GaretJax/sphinx-autobuild
+sphinx-autobuild==2021.3.14
+# https://pradyunsg.me/furo/
+furo
+# https://sphinx-extensions.readthedocs.io/en/latest/sphinx-copybutton.html
+sphinx-copybutton
+# https://readthedocs-sphinx-search.readthedocs.io/en/latest/index.html
+readthedocs-sphinx-search
+
+
+# ------------------------------------------------------------------------------
+# Code quality
+# ------------------------------------------------------------------------------
+# https://github.com/PyCQA/flake8
+flake8==6.0.0
+# https://github.com/gforcada/flake8-isort
+flake8-isort==6.0.0
+# https://github.com/pre-commit/pre-commit
+pre-commit==3.0.4
+# https://github.com/nedbat/coveragepy
+coverage==7.1.0
+# https://github.com/psf/black
+black==23.1.0
+# https://github.com/PyCQA/pylint-django#
+pylint-django==2.5.3
+
+# ------------------------------------------------------------------------------
+# Django
+# ------------------------------------------------------------------------------
+# https://github.com/FactoryBoy/factory_boy
+factory-boy==3.2.1
+# https://github.com/jazzband/django-debug-toolbar
+django-debug-toolbar==3.8.1
+# https://github.com/django-extensions/django-extensions
+django-extensions==3.2.1
+# https://github.com/nedbat/django_coverage_plugin
+django-coverage-plugin==3.0.0
+# https://github.com/pytest-dev/pytest-django
+pytest-django==4.5.2
