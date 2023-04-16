@@ -3,6 +3,7 @@
 from .base import *  # noqa
 from .base import env
 
+
 # ------------------------------------------------------------------------------
 # GENERAL
 # ------------------------------------------------------------------------------
@@ -77,4 +78,3 @@ STATICFILES_STORAGE = "django.contrib.staticfiles.storage.StaticFilesStorage"
 SECURE_SSL_REDIRECT = False
 SESSION_COOKIE_SECURE = False
 CSRF_COOKIE_SECURE = False
-

@@ -1,6 +1,5 @@
 """Database models."""
 # Standard Library
-from datetime import timedelta
 
 # Django Libraries
 from django.contrib.auth.models import (

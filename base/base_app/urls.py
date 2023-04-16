@@ -29,10 +29,11 @@ from drf_spectacular.views import (
     SpectacularSwaggerView,
 )
 
+
 urlpatterns = [
-                  path("", debug.default_urlconf),
-                  path(settings.ADMIN_URL, admin.site.urls),
-              ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+    path("", debug.default_urlconf),
+    path(settings.ADMIN_URL, admin.site.urls),
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 # ----------------------------------------------------------------------------
 # Swagger UI
@@ -94,4 +95,3 @@ urlpatterns += [
     # path("api/wrike/", include("wrike.urls")),
     # path("api/pt/", include("tasks.urls")),
 ]
-

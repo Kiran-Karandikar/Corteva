@@ -5,7 +5,7 @@ from django.contrib.auth import get_user_model
 from django.contrib.auth.admin import UserAdmin as BaseUserAdmin
 from django.utils.translation import gettext_lazy as translate
 
-# Project Libraries
+# 3rd Party Libraries
 from user.forms import UserAdminChangeForm, UserAdminCreationForm
 
 
@@ -60,4 +60,3 @@ class UserAdmin(BaseUserAdmin):
 
 
 admin.site.register(User, UserAdmin)
-
