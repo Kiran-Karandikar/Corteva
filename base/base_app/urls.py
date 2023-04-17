@@ -82,11 +82,11 @@ if settings.DEBUG:
 
         urlpatterns += [path("__debug__/", include(debug_toolbar.urls))]
 
-    # Include all urls used for sample/testing/trying out features.
-    urlpatterns += [path("api/sample/", include("prototype.urls"))]
-
     urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
+# ----------------------------------------------------------------------------
+# Custom API  url
+# ----------------------------------------------------------------------------
 # ----------------------------------------------------------------------------
 # Custom API  url
 # ----------------------------------------------------------------------------
