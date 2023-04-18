@@ -9,8 +9,8 @@ ENV PYTHONDONTWRITEBYTECODE 1
 ENV BUILD_ENV ${BUILD_ENVIRONMENT}
 
 COPY ./base /base
-COPY ./wx_data /wx_data
-COPY ./yld_data /yld_data
+COPY ./wx_data /base/wx_data
+COPY ./yld_data /base/yld_data
 COPY ./base/requirements /tmp/requirements
 WORKDIR /base
 EXPOSE 8000

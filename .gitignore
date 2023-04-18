@@ -162,10 +162,6 @@ base/samples
 # Don't include static scripts
 base/staticfiles
 
-# Don't include any environment variables
-base/.envs
-base/envs
-
 # Don't include any certificates
 *certs*
 

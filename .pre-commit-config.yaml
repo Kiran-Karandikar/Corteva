@@ -26,14 +26,10 @@ repos:
       - id: pretty-format-json
 
   - repo: https://github.com/google/pre-commit-tool-hooks
-    rev: v1.2.4 # Use the rev you want to point at.
+    rev: v1.2.4
     hooks:
-      # To disable this on sections of a markdown file, use the ignore/resume comments
-      # <!-- google-doc-style-ignore --> and <!-- google-doc-style-resume -->
       - id: check-google-doc-style
       - id: check-links
-      # In a markdown file, put the <!-- toc --> and <!-- tocstop --> markers to
-      # indicate where to put the table of contents
       - id: markdown-toc
 
   - repo: https://github.com/pre-commit/pygrep-hooks
@@ -42,12 +38,6 @@ repos:
       - id: rst-backticks
       - id: rst-directive-colons
       - id: rst-inline-touching-normal
-
-  # Added to search and replace string as per need basis.
-  #  - repo: https://github.com/mattlqx/pre-commit-search-and-replace
-  #    rev: v1.0.5
-  #    hooks:
-  #      - id: search-and-replace
 
   - repo: https://github.com/asottile/pyupgrade
     rev: v3.3.1

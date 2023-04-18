@@ -20,7 +20,7 @@ from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import include, path
-from django.views import debug, defaults as default_views
+from django.views import defaults as default_views
 
 # 3rd Party Libraries
 from drf_spectacular.views import (
@@ -31,7 +31,6 @@ from drf_spectacular.views import (
 
 
 urlpatterns = [
-    path("", debug.default_urlconf),
     path(settings.ADMIN_URL, admin.site.urls),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
@@ -56,8 +55,6 @@ urlpatterns += [
 # Debug Urls
 # ----------------------------------------------------------------------------
 if settings.DEBUG:
-    # This allows the error pages to be debugged during development, just visit
-    # these url in browser to see how these error pages look like.
     urlpatterns += [
         path(
             "400/",
@@ -87,11 +84,6 @@ if settings.DEBUG:
 # ----------------------------------------------------------------------------
 # Custom API  url
 # ----------------------------------------------------------------------------
-# ----------------------------------------------------------------------------
-# Custom API  url
-# ----------------------------------------------------------------------------
 urlpatterns += [
-    # path("api/user", include("user.urls")),
-    # path("api/wrike/", include("wrike.urls")),
-    # path("api/pt/", include("tasks.urls")),
+    path("api/weather/", include("weather.urls")),
 ]
