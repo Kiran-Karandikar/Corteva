@@ -62,12 +62,6 @@ if env("USE_DOCKER", default="N") == "Yes":
 # /installation_instructions.html#configuration
 INSTALLED_APPS += ["django_extensions"]  # noqa F405
 
-# ------------------------------------------------------------------------------
-# WhiteNoise
-# ------------------------------------------------------------------------------
-# http://whitenoise.evans.io/en/latest/django.html#using-whitenoise-in
-# -development
-INSTALLED_APPS += ["whitenoise.runserver_nostatic"]
 STATICFILES_STORAGE = "django.contrib.staticfiles.storage.StaticFilesStorage"
 
 # ------------------------------------------------------------------------------

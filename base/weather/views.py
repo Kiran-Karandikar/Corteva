@@ -47,10 +47,10 @@ class WeatherStatsDetailsView(ReadOnlyModelViewSet):
     """
 
     permission_classes = [AllowAny]
-    lookup_fields = ("weather_station", "record_date")
+    lookup_fields = ("weather_station", "year")
     pagination_class = api_settings.DEFAULT_PAGINATION_CLASS
     queryset = WeatherStats.objects.all()
     http_method_names = ["get"]
     serializer_class = WeatherStatsDetailsSerializer
     filter_backends = [DjangoFilterBackend]
-    filterset_fields = ("weather_station", "record_date")
+    filterset_fields = ("weather_station", "year")

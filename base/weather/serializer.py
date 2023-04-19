@@ -28,7 +28,7 @@ class WeatherStatsDetailsSerializer(serializers.ModelSerializer):
     """Serializer for the retrieving details from `WeatherStats` model.
 
     Notes:
-        1. Retrieve all details from `WeatherDetails` model.
+        1. Retrieve all details from `WeatherStats` model.
     """
 
     class Meta:

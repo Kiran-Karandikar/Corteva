@@ -13,6 +13,8 @@ django-cors-headers==3.13.0
 django-filter==23.1
 # https://www.django-rest-framework.org/
 djangorestframework==3.14.0
+# https://drf-spectacular.readthedocs.io/en/latest/
+drf-spectacular==0.26.2
 # ------------------------------------------------------------------------------
 # Extras
 # ------------------------------------------------------------------------------

@@ -48,6 +48,8 @@ def process_weather_record(file_path):
                     )
                 )
             logger.info(f"Finished processing {file_path}")
+    else:
+        logger.critical(f"File does not exists {file_path}")
     return records_list
 
 

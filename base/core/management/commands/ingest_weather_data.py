@@ -1,4 +1,4 @@
-"""Django command to populate the `Project` model for default `project_id` on first boot."""
+"""Django command to populate the `WeatherDetails` model on first boot."""
 # Standard Library
 import logging
 import time
@@ -47,7 +47,7 @@ class Command(BaseCommand):
                     )
                 )
 
-        WeatherDetails.objects.bulk_create(objs)
+        WeatherDetails.objects.bulk_create(objs, batch_size=1000, ignore_conflicts=True)
         end_time = time.monotonic()
         logger.info("Success................")
         logger.info("time taken %s" % timedelta(seconds=end_time - start_time))
